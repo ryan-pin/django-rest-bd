@@ -26,6 +26,12 @@ from drf_yasg import openapi
 router = DefaultRouter()
 router.register(r'clientes', views.ClienteViewSet)
 router.register(r'endereços', views.EndereçoViewSet)
+router.register(r'perfis', views.PerfilViewSet)
+router.register(r'itens', views.ItemViewSet)
+router.register(r'formas_pagamento', views.FormaPagamentoViewSet)
+router.register(r'pedidos', views.PedidoViewSet)
+router.register(r'vendedores', views.VendedorViewSet)
+
 
 schema_view = get_schema_view(
     openapi.Info(
